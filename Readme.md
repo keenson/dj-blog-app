@@ -2,7 +2,7 @@
 # Django Blog App
 Ths is a simple blog app I made while learning django
 Here's the site:
-https://joplinapp.org#attachments--resources
+https://cruizbeans.herokuapp.com/
 
 
 ## Usage

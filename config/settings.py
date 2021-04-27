@@ -15,10 +15,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['0.0.0.0']
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+ALLOWED_HOSTS = ['cruizbeans.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -139,13 +140,13 @@ LOGOUT_REDIRECT_URL = 'home'
 
 #SMTP configuration
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.smtp.EmailBackend'  # During development only
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'cruizbeansteam@gmail.com'
-EMAIL_HOST_PASSWORD = 'vmngnuicvlzxdswo'
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Cruizbeans Team <noreply@cruiz.com>'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # During development only
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'cruizbeansteam@gmail.com'
+# EMAIL_HOST_PASSWORD = 'vmngnuicvlzxdswo'
+# EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = 'Cruizbeans Team <noreply@cruiz.com>'
 
 
 #django_heroku.settings(locals())
