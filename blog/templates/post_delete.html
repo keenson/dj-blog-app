@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
+        <h1>Delete post</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            <p>Are you sure you want to delete "{{ post.title }}"</p>       
+            <input type="submit" value="Confirm">
+        </form>
+    {% else %}
+        You are not allowed here.
+    {% endif %}
+{% else %}
+
+    Please login to continue.
+    
+{% endif %}
+
+{% endblock %}
