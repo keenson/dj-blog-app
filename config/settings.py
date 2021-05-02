@@ -139,16 +139,7 @@ LOGOUT_REDIRECT_URL = 'home'
 
 
 
-
 #SMTP configuration
-
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # During development only
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'cruizbeansteam@gmail.com'
-# EMAIL_HOST_PASSWORD = 'vmngnuicvlzxdswo'
-# EMAIL_USE_TLS = True
-# DEFAULT_FROM_EMAIL = 'Cruizbeans Team <noreply@cruiz.com>'
 
 
 #django_heroku.settings(locals())
